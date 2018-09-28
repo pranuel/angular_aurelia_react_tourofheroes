@@ -1,0 +1,9 @@
+<template>
+  <div if.bind="messageService.messages.length">
+
+    <h2>Messages</h2>
+    <button class="clear" click.delegate="messageService.clear()">clear</button>
+    <div for.repeat='message of messageService.messages'> ${message} </div>
+
+  </div>
+</template>

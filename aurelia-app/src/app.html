@@ -1,0 +1,10 @@
+<template>
+    <require from="./messages/messages"></require>
+    <h1>${title}</h1>
+    <nav>
+        <a route-href="route: dashboard">Dashboard</a>
+        <a route-href="route: heroes">Heroes</a>
+    </nav>
+    <router-view></router-view>
+    <messages></messages>
+</template>

@@ -1,0 +1,37 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "strictPropertyInitialization": false, // TS2564 since TypeScript 2.7
+    "strict": true,
+    "target": "es5",
+    "module": "esnext",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "sourceRoot": "src",
+    "sourceMap": true,
+    "allowJs": true,
+    "baseUrl": "src",
+    "skipLibCheck": true,
+    "lib": [
+      "es2017",
+      "dom"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "aurelia_project",
+    "dist",
+    "test",
+    "webpack.*.js"
+  ],
+  "filesGlob": [
+    "./src/**/*.ts",
+    "./src/**/*.d.ts",
+    "./test/e2e/**/*.ts",
+    "**/custom_typings/**/*.d.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": false
+  }
+}
